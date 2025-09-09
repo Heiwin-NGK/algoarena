@@ -148,7 +148,7 @@ color:var(--text-white);
   box-shadow: 0 10px 28px rgba(10,20,40,.65); }
     .step h4{ margin:0 0 8px; color:var(--text-gold) }
 
-    .timer-btn {
+/*    .timer-btn {
   display: inline-flex;
   align-items: center;
   gap: 15px;
@@ -192,7 +192,7 @@ color:var(--text-white);
     text-shadow: 0 0 6px var(--hi-cyan), 0 0 12px rgba(23,227,255,0.3);
     transform: scale(1);
   }
-}
+}*/
 
 
     /* ========= People list ========= */
@@ -213,53 +213,7 @@ color:var(--text-white);
               linear-gradient(90deg, rgba(0,80,200,.4), transparent); /* blue tint */
   margin:30px 0;}
 
-
-    .illustration{
-    width:100%;
-    max-width:400px;
-    aspect-ratio:4/3;
-    background:#0f0f1e;
-    border-radius:16px;
-    border:1px solid rgba(255,255,255,0.15);
-    position:relative;
-    overflow:hidden;
-    margin:auto;
-  }
-
-  .dot{
-    position:absolute;
-    width:14px;
-    height:14px;
-    border-radius:50%;
-    background:radial-gradient(circle, rgba(255,0,0,0.9), rgba(100,0,0,0.4));
-    box-shadow:0 0 6px rgba(255,0,0,0.7);
-    transition: transform 0.3s;
-  }
-
-  .dot.blue{
-    background:radial-gradient(circle, rgba(0,100,255,0.9), rgba(0,0,100,0.4));
-    box-shadow:0 0 6px rgba(0,100,255,0.7);
-  }
-
-  .dot:hover{
-    transform: scale(1.3);
-  }
-
-  .connection{
-    position:absolute;
-    height:2px;
-    transform-origin:left center;
-    pointer-events:none;
-    animation: glowPulse 2s infinite alternate;
-  }
-
-  @keyframes glowPulse{
-    from { opacity:0.6; box-shadow: 0 0 4px currentColor, 0 0 10px currentColor; }
-    to { opacity:1; box-shadow: 0 0 12px currentColor, 0 0 20px currentColor; }
-  }
-    
-
-    /* ========= Small utility ========= */
+/* ========= Small utility ========= */
     .sr{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0) }
 
      input, select{ 
@@ -300,7 +254,7 @@ input:focus, select:focus{
         <div class="brand">Department of Computer Science and Engineering • VCET, Madurai (Autonomous)</div>
 
         <h1 class="title" aria-label="ALGOARENA"><span class="algo">ALGO</span><span class="arena">ARENA</span></h1>
-        <div class="kicker">2<sup>8th</sup> Programmer’s Day • Celebrate code, logic & problem‑solving</div>
+        <div class="kicker">Programmer’s Day • Celebrate code, logic & problem‑solving</div>
 
         <div class="meta">
           <div class="pill"><b>Date:</b> 13 Sept 2025</div>
@@ -311,10 +265,7 @@ input:focus, select:focus{
         <div class="cta">
           <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeXFEAOf5hVcpk5CjHrCEYiDbfjz-WKp0WpzbKDzdkHgnvIEw/viewform" target="blank">Register Now</a>
           <a class="btn secondary" href="#schedule">View Schedule</a>
-        <div class="timer-btn">
-  <span class="hourglass">⏳</span> 
-  <span id="countdown">Loading...</span>
-</div>
+        
         </div>
         
 
@@ -341,7 +292,7 @@ input:focus, select:focus{
         </div>
         <div class="step">
           <h4>Round 3 — Final Round</h4>
-          <p>Top teams battle it out in a problem‑solving presentation(PPT) showdown.</p>
+          <p>Top teams battle it out in a showdown.</p>
         </div>
       </div>
     </section>
@@ -356,9 +307,9 @@ input:focus, select:focus{
           <span class="badge">Details</span>
           <h3>Quick facts</h3>
           <ul>
-            <li><b>Date:</b> 13/09/2025</li>
-            <li><b>Time:</b> 9:30 AM onwards</li>
-            <li><b>Venue:</b> Dhiraviyam Auditorium, VCET</li>
+            <li><b>Date:</b> 12/09/2025</li>
+            <li><b>Round 1 :</b> 9:30 AM</li>
+            <li><b>Venue:</b> Seminar Hall-2</li>
           </ul>
         </article>
 
@@ -377,14 +328,21 @@ input:focus, select:focus{
           <h3>Info</h3>
           <ul>
             <li>Team of 2 members</li>
-            <li>2<sup>nd</sup>and 3<sup>rd</sup> round:selected based on participant strength</li>
-            <li>Prize and certificates for The TOP3</li>
+            <li>Prizes and certificates for The TOP3</li>
             <li>Participation certificates and OD will be Provided for all</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="badge">Prize</span>
+          <h3>Info</h3>
+          <ul>
+            <li>1st Prize-700</li>
+            <li>2nd Prize-500</li>
+            <li>3rdPrize-300</li>
           </ul>
         </article>
       </div>
     </section>
-
     <div class="divider container"></div>
 
     <!-- PEOPLE -->
@@ -392,12 +350,14 @@ input:focus, select:focus{
       <h2 class="section-title">Organizers & Coordinators</h2>
       <div class="people">        
         <div class="person"><b>Shri M.V. Muthuramalingam</b><div class="role">Chief Patron/Chairman,VCET</div></div>
+        <div class="person"><b>Dr. N. Rajkumar</b><div class="role">Patron/Director</div></div>
         <div class="person"><b>Dr. P. Alli</b><div class="role">Patron/Principal</div></div>
         <div class="person"><b>Dr. G. Vinoth Chakkaravarthy</b><div class="role">Convenor/HoD-CSE</div></div>
         <div class="person"><b>Mrs. V. Lavanya</b><div class="role">Faculty Coordinator</div></div>
         <div class="person"><b>Mrs. N.P. Rajeswari</b><div class="role">Faculty Coordinator</div></div>
         <div class="person"><b>B. Saravanan</b><div class="role">Student Coordinator • +91‑78713 20064</div></div>
         <div class="person"><b>J. Karthick Roshan</b><div class="role">Student Coordinator • +91-87780 88055</div></div>
+        <div class="person"><b>R.A Lekshmi Raja Sree</b><div class="role">Student Coordinator • +91-6392094800</div></div>
       </div>
     </section>
 
@@ -410,92 +370,6 @@ input:focus, select:focus{
       <p style="margin:10px 0 0">© 2025 Department of Computer Science and Engineering • ALGOARENA</p>
     </div>
   </footer>
-  <script>
-const board = document.getElementById("board");
-const dots = [];
-const totalDots = 9;
-
-// Generate dots
-for (let i = 0; i < totalDots; i++) {
-  const dot = document.createElement("div");
-  dot.classList.add("dot");
-  if (Math.random() > 0.5) dot.classList.add("blue");
-
-  dot.style.left = `${Math.random() * 90}%`;
-  dot.style.top = `${Math.random() * 90}%`;
-
-  board.appendChild(dot);
-  dots.push(dot);
-}
-
-// Helper: get center coordinates of a dot relative to board
-function getCenter(dot) {
-  const rectBoard = board.getBoundingClientRect();
-  const rectDot = dot.getBoundingClientRect();
-  return {
-    x: rectDot.left - rectBoard.left + rectDot.width / 2,
-    y: rectDot.top - rectBoard.top + rectDot.height / 2
-  };
-}
-
-// Connect only red-blue pairs with neon glow
-dots.forEach((dotA, i) => {
-  const centerA = getCenter(dotA);
-
-  dots.forEach((dotB, j) => {
-    if (j <= i) return; // avoid duplicates
-    // Only connect if one is blue and the other is red
-    if (dotA.classList.contains("blue") === dotB.classList.contains("blue")) return;
-
-    const centerB = getCenter(dotB);
-    const color = 'rgba(180,50,255,0.85)'; // vibrant purple glow
-
-    const dx = centerB.x - centerA.x;
-    const dy = centerB.y - centerA.y;
-    const length = Math.sqrt(dx * dx + dy * dy);
-    const angle = Math.atan2(dy, dx) * 180 / Math.PI;
-
-    const line = document.createElement("div");
-    line.classList.add("connection");
-    line.style.width = `${length}px`;
-    line.style.left = `${centerA.x}px`;
-    line.style.top = `${centerA.y}px`;
-    line.style.transform = `rotate(${angle}deg)`;
-    line.style.background = color;
-    line.style.color = color; // for glowPulse animation
-    board.appendChild(line);
-  });
-});
-
-const targetDate = new Date("2025-09-13T09:30:00").getTime();
-const countdownEl = document.getElementById("countdown");
-
-function updateCountdown() {
-  const now = new Date().getTime();
-  const diff = targetDate - now;
-
-  if (diff <= 0) {
-    countdownEl.innerHTML = "Event Started!";
-    clearInterval(timerInterval);
-    return;
-  }
-
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((diff / (1000 * 60)) % 60);
-  const seconds = Math.floor((diff / 1000) % 60);
-
-  countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-}
-
-updateCountdown();
-const timerInterval = setInterval(updateCountdown, 1000);
-
-</script>
-
 </body>
 </html>
-
-
-
 
